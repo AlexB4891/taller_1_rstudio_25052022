@@ -32,7 +32,7 @@ Iniciamos con la instalación de R básico, esta instalación basta para nuestro
 
 Para instalar R- Base es necesario saber si nuestro computador es de 32 o 64 bits. Una vez resulta esta duda, procederemos a hacer clic en el siguiente enlace:
 
-[Instalador de R desde CRAN](https://cran.r-project.org/bin/windows/base/R-4.0.5-win.exe)
+[Instalador de R desde CRAN](https://cran.r-project.org/bin/windows/base/R-4.2.0-win.exe)
 
 Este nos dará la descarga de un archivo `.exe`. Una vez descargado, empezamos la instalación, el instalador fue desarrollado para aprovechar de manera eficiente dados los recursos de tu computador. Sin embargo tu puedes manejar las carácteristicas de la instalación. Ahora, esperamos unos minutos y tendremos listo nuestro programa.
 
@@ -40,7 +40,7 @@ Este nos dará la descarga de un archivo `.exe`. Una vez descargado, empezamos l
 
 Vamos a proceder a la instalación de GIT, un sistema de control de versiones. Este es un sistema de control de versiones que facilitará la transferencia, organización y registro de los materiales que se puedan generar no solo en el curso, sino también, en la actividad diaria usando cualquier lenguaje de programación como python, nodejs, etc. Para ello visitamos el enlace:
 
-[Instalador de GIT](https://git-scm.com/downloads)
+[Instalador de GIT](https://git-scm.com/download/win)
 
 Seguimos los pasos de instalación dejando las opciones dadas por default. 
 
@@ -50,7 +50,7 @@ Ya estamos casi listos para empezar el curso, solo nos queda obtener los recurso
 
 El IDE (Integrated devolpment environment) de RStudio es una herramienta potentísima que ayuda al usuario en el aprendizaje y la eficiencia a la hora de trabajar gracias a la centralización de recursos y *gadgets* que nos facilitan la vida y garantizan una investigación reproducible. Para su instalación vamos al siguiente enlace:
 
-[Instalador de RStudio](https://download1.rstudio.org/desktop/windows/RStudio-1.3.959.exe)
+[Instalador de RStudio](https://download1.rstudio.org/desktop/windows/RStudio-2022.02.2-485.exe)
 
 Seguimos la configuración por default para la ruta de instalación, salvo que se desee instalar en un directorio especifico, lo cual se recomienda con gran énfasis si tu directorio tiene caracteres especiales (ñ, espacios u otros) debido a que el programa intentará instalar dependencias a partir de la ruta que elijamos. Con ello procedemos a la instalación.
 
