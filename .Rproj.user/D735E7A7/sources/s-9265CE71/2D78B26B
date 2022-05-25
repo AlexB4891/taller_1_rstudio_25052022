@@ -3,7 +3,7 @@
     "path": "C:/Users/Alex/OneDrive/Documentos/ergostat_administrativo/talleres_externos/taller_1_rstudio_25052022/guia.Rmd",
     "project_path": "guia.Rmd",
     "type": "r_markdown",
-    "hash": "27574122",
+    "hash": "17046263",
     "contents": "",
     "dirty": false,
     "created": 1653508884946.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "42,52",
-        "scrollLine": "32"
+        "cursorPosition": "46,84",
+        "scrollLine": "46"
     },
     "folds": "",
-    "lastKnownWriteTime": 1653511839,
+    "lastKnownWriteTime": 1653512226,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1653511839802,
+    "last_content_update": 1653512226422,
     "read_only": false,
     "read_only_alternatives": []
 }

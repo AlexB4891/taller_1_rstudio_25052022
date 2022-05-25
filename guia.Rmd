@@ -22,29 +22,29 @@ header-includes:
 
 ![](Avatar2.jpg)
 
-Bienvenidos al taller **Todo lo que necesitas saber para sacarle el jugo a RStuido**. Debes tener presente que existe solo una manera para aprender R, para nosotros es grato que queiras aprender con nosotros. Si los recursos de tu computador (mínimo 8GB de RAM) te son insufientes y quieres acceder a tus proyectos *en linea* desde cualquier computador puedes utilizar **RStudio Cloud**, que requiere únicamente de una conexión de internet.
+Bienvenidos al taller **Todo lo que necesitas saber para sacarle el jugo a RStudio**. Debes tener presente que existe solo una manera para aprender R, para nosotros es grato que queiras aprender con nosotros. Si los recursos de tu computador (mínimo 8GB de RAM) te son insuficentes y quieres acceder a tus proyectos *en linea* desde cualquier computador puedes utilizar **RStudio Cloud**, que requiere únicamente de una conexión de internet.
 
-Te redordamosA continuación te dejamos los **enlaces de instalación** de las herramientas que emplearemos en el taller.
+A continuación te dejamos los **enlaces de instalación** de las herramientas que emplearemos en el taller.
 
 # Instalación de R-Base
 
-Iniciamos con la instalación de R básico, esta instalación basta para nuestros propósitos, sin embargo hoy en día tenemos a disposición el maravilloso IDE (integrated develpment environment) de RStudio que nos ayuda a que la curva de aprendizaje sea más ligera para los estudiantes. 
+Iniciamos con la instalación de R básico, esta instalación basta para nuestros propósitos, sin embargo hoy en día tenemos a disposición el maravilloso IDE (integrated development environment) de RStudio que nos ayuda a que la curva de aprendizaje sea más ligera para los estudiantes. 
 
-Para instalar R- Base es necesario saber si nuestro computador es de 32 o 64 bits. Una vez resulta esta duda, procederemos a hacer clic en el siguiente enlace:
+Para instalar R-Base es necesario saber si nuestro computador es de 32 o 64 bits. Una vez resulta esta duda, procederemos a hacer clic en el siguiente enlace:
 
 [Instalador de R desde CRAN](https://cran.r-project.org/bin/windows/base/R-4.2.0-win.exe)
 
-Este nos dará la descarga de un archivo `.exe`. Una vez descargado, empezamos la instalación, el instalador fue desarrollado para aprovechar de manera eficiente dados los recursos de tu computador. Sin embargo tu puedes manejar las carácteristicas de la instalación. Ahora, esperamos unos minutos y tendremos listo nuestro programa.
+Este nos dará la descarga de un archivo `.exe`. Una vez descargado, empezamos la instalación, el instalador fue desarrollado para aprovechar de manera eficiente dados los recursos de tu computador. Sin embargo tu puedes manejar las características de la instalación. Ahora, esperamos unos minutos y tendremos listo nuestro programa.
 
 # Instalación de GIT
 
-Vamos a proceder a la instalación de GIT, un sistema de control de versiones. Este es un sistema de control de versiones que facilitará la transferencia, organización y registro de los materiales que se puedan generar no solo en el curso, sino también, en la actividad diaria usando cualquier lenguaje de programación como python, nodejs, etc. Para ello visitamos el enlace:
+Vamos a proceder a la instalación de GIT, un sistema de control de versiones  que facilitará la transferencia, organización y registro de los materiales que se puedan generar no solo en el curso, sino también, en la actividad diaria usando cualquier lenguaje de programación como python, Nodejs, R, Julia etc. Para ello visitamos el enlace:
 
 [Instalador de GIT](https://git-scm.com/download/win)
 
 Seguimos los pasos de instalación dejando las opciones dadas por default. 
 
-Ya estamos casi listos para empezar el curso, solo nos queda obtener los recursos necesarios para la obtención de los materiales que día a día iremos desarrollando.
+Ya estamos casi listos para empezar el taller. Nos falta la estrella de este taller.
 
 # Instalación de RStudio
 
