@@ -1,0 +1,265 @@
+---
+title: "Todo lo que necesitas saber para sacarle el jugo a RStudio"
+subtitle: "Comunidad ERGOSTAT"  
+author: 
+  - "Alex Bajaña"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: tema_ergos.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+params: 
+    background_img: "portada.png"
+---
+
+class: title-slide middle
+background-image: url(`r params$background_img`) 
+background-size: 100%
+
+# `r rmarkdown::metadata$title`
+## `r rmarkdown::metadata$subtitle`
+### Alex Bajaña
+### Mayo, 2022
+
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, 
+  fig.height=3.5, 
+  fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+
+```
+
+background-image: url(Avatar2.jpg)
+background-position: 50% 100%
+background-size: 50%
+class: center, top
+
+# ¿Qué es el Centro de Investigación Estadística ERGOSTATS?
+
+---
+
+background-image: url(1.jpg)
+background-position: 50% 50%
+background-size: 50%
+class: center, middle, inverse
+
+---
+
+background-image: url(2.jpg)
+background-position: 50% 50%
+background-size: 50%
+class: center, bottom, inverse
+
+---
+
+background-image: url(3.jpg)
+background-position: 50% 50%
+background-size: 50%
+class: center, bottom, inverse
+
+---
+
+background-image: url(4.jpg)
+background-position: 50% 50%
+background-size: 50%
+class: center, bottom, inverse
+
+---
+
+background-image: url(5.jpg)
+background-position: 50% 50%
+background-size: 50%
+class: center, bottom, inverse
+
+---
+
+background-image: url(9.jpg)
+background-position: 50% 50%
+background-size: 55%
+class: center, bottom, inverse
+
+---
+
+class: inverse, center, middle
+
+# Antes de empezar, una invitación
+---
+
+background-image: url(11.jpg)
+background-position: 50% 50%
+background-size: 50%
+class: center, middle, inverse
+
+---
+
+background-image: url(12.jpg)
+background-position: 50% 50%
+background-size: 50%
+class: center, bottom, inverse
+
+---
+background-image: url(carbon.png)
+background-position: 50% 30%
+background-size: 55%
+class: center, bottom, inverse
+
+# > "Sean todos bienvenidos"
+
+---
+
+# Agenda del taller:
+
+**El taller tiene una duración de una hora (60 min):**
+
+### Herramientas para centralizar nuestro trabajo
+
+--
+* Principio de reproducibilidad
+
+--
+* Beneficios de la integración de R, RStudio y GIT
+
+--
+* Verifica tu ambiente de trabajo, una alternativa sencilla
+
+--
+
+###  Instalación de las herramimentas
+
+--
+* Instalación de R-base (R.4.1.0 >)
+
+--
+* Instalación del IDE RStudio (V. 3.0.0 >)
+
+--
+* Instalación de GIT (2.36.1 >)
+
+--
+
+> En la guía de instalación encontrarás los links de instalación `r emo::ji("cat")`
+
+---
+
+
+# Agenda del taller (cont.): 
+
+### Los paneles de RStudio
+
+--
+### Consola y terminal
+
+--
+* Configuraciones importantes que te evitarán problemas futuros
+
+--
+* Diferencias y aplicaciones 
+
+--
+* La importancia de los proyectos (archivos `.Rproj`)
+
+--
+* Antes y después de `git init`
+
+--
+
+### Source
+
+--
+* Consejos y trucos a la hora de escribir tu script en R  
+
+--
+* Atajos que te van a ahorrar mucho tiempo
+
+--
+* No más `archivo_final_final_este_si_es_el_bueno.R`
+
+---
+
+
+# Agenda del taller (cont.): 
+
+### Los paneles de RStudio (cont.)
+
+--
+### Environment & History
+
+--
+* Monitoréa el uso de memoría
+
+--
+* Vuelve en el tiempo a esa linea de código que sí funcionó pero borraste 
+
+--
+* Antes y después de `git init`
+
+--
+
+### Files, Plot y Viewer
+
+--
+* Manipula tus archivos sin salirte de RStudio
+
+--
+* Lo que ves en el panel **Plot** no es tu resultado
+
+--
+* ¿Cómo que no necesito internet para saber lo que hace una libreria?
+
+---
+
+class: center
+
+# Estás listo para empezar tus análisis
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/1280px-RStudio_logo_flat.svg.png" alt="Girl in a jacket"  height="200">
+
+![](https://i.pinimg.com/originals/e8/f7/5a/e8f75ac4709aea44b29a459e1b8844ca.gif)
+
+---
+
+class: inverse, center, middle
+
+# Antes de irnos, una invitación
+---
+
+background-image: url(11.jpg)
+background-position: 50% 50%
+background-size: 50%
+class: center, middle, inverse
+
+---
+
+background-image: url(12.jpg)
+background-position: 50% 50%
+background-size: 50%
+class: center, bottom, inverse
+
+
+---
+
+class: inverse,center middle
+background-image: url(ergos-01.png) 
+background-size: 100%
+
+# ! Muchas gracias por haber participado ¡

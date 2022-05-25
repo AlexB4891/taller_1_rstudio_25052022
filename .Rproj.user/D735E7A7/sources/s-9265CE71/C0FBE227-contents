@@ -1,0 +1,179 @@
+---
+title: "Redacción de artículos académicos con R"
+subtitle: "Episodio 0: Instalación y preparación de las herramientas de trabajo"  
+author:
+- name: Bajaña Alex
+- name: Heredia Aracely
+date: '`r Sys.Date()`'
+output:
+  html_document:
+    toc: yes
+    toc_depth: '3'
+    df_print: paged
+  pdf_document:
+    toc: yes
+    toc_depth: 3
+urlcolor: blue
+fontfamily: arev
+header-includes:
+- \usepackage{titling}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+---
+
+<style> body {text-align: justify} </style>
+
+Bienvenidos al curso **"Redacción de artículos académicos con R"**. Durante 5 semanas vamos a revisar el maravilloso mundo del ambiente de programación R y su uso en la redacción de documentos científicos. Antes de empezar quiero explicar por que uso la palabra *ambiente* y no solo lenguaje de programación. Alrededor del globo cada vez más usuarios se suman al uso y aporte de nuevos elementos a este lenguaje de programación, dándole la propiedad de ser un elemento vivo que se nutre de múltiples esfuerzos individuales. 
+
+Hace poco RStudio paso a ser una *Public Benefit Corporation* haciendo denotar una de las propiedades fundamentales de los proyectos de código abierto como es R: estar al servicio de la gente en cualquier rincón del mundo sin importar sus recursos o características, en este sentido, este es un ambiente inclusivo y de gran potencia para la generación de una sociedad más justa. 
+
+Tras este breve preámbulo, es necesario decir que no existe solo una manera para aprender R. Existen medios remotos como lo son *RStudio Cloud*, que requiere únicamente de una conexión de internet y otros locales como los que se van a utilizar en este curso. Aquí se describirá una breve guía de los recursos necesarios para la realización del curso, además de un gran aliado como lo es GIT.
+
+> Para este curso se requiere de requisitos mínimos:
+* klk
+* Version R
+* Memoria ram
+En caso de necesitar asistencia cominicarnos con anticipación para asistir la conexión por medio de RStudio cloud
+
+# Instalación de R-Base
+
+Iniciamos con la instalación de R básico, esta instalación basta para nuestros propósitos, sin embargo hoy en día tenemos a disposición el maravilloso IDE (integrated develpment environment) de RStudio que nos ayuda a que la curva de aprendizaje sea más ligera para los estudiantes. 
+
+Para instalar R- Base es necesario saber si nuestro computador es de 32 o 64 bits. Una vez resulta esta duda, procederemos a hacer clic en el siguiente enlace:
+
+[Instalador de R desde CRAN](https://cran.r-project.org/bin/windows/base/R-4.0.5-win.exe)
+
+Este nos dará la descarga de un archivo `.exe`. Una vez descargado, empezamos la instalación: 
+
+* Primero, debemos elegir el lenguaje de preferencia
+* Segundo, aceptamos los terminos y condiciones
+* Tercero, elegimos la ruta en la que se guardará el programa
+* Después, elegimos qué componentes deben ser instalados (se recomienda dejar todas las opciones activas)
+* Luego, elegimos aceptar todas estas configuraciones
+* A continuación, elegimos el tipo de display (se recomienda la establecida por default)
+* Enseguida, elegimos ayuda HTML para los textos auxiliares
+* Posteriormente, elegimos una ruta para las librerías. Si se desea una carpeta en el menú de inicio, se recomienda dejar las opciones por default
+* Finalmente, algunas alternativas adicionales como son la creación de una acceso rápido y la posibilidad de guardar un registro de varias versiones de R (en esta ultima se recomienda mantener un historial por motivos de reproducibilidad)
+
+Con eso concluye el proceso de instalación esperamos unos minutos y tendremos listo nuestro programa.
+
+# Instalación de RStudio
+
+Como se mencionó, el IDE de RStudio es una herramienta potentísima que ayuda al usuario en el aprendizaje y eficiencia a la hora de trabajar gracias a la centralización de recursos que se describirán a lo largo del curso. Para su instalación vamos al siguiente enlace:
+
+[Instalador de RStudio](https://download1.rstudio.org/desktop/windows/RStudio-1.3.959.exe)
+
+Seguimos la configuración por default para la ruta de instalación, salvo que se desee instalar en un directorio especifico, lo cual no se recomienda debido a que el programa intentará instalar dependencias a partir de la ruta que elijamos. Con ello procedemos a la instalación.
+
+# Instalación de GIT
+
+Por último y no menos importante, vamos a proceder a la instalación de GIT. Este es un sistema de control de versiones que facilitará la transferencia, organización y registro de los materiales que se puedan generar no solo en el curso, sino también, en la actividad diaria usando cualquier lenguaje de programación como python, nodejs, etc. Para ello visitamos el enlace:
+
+[Instalador de GIT](https://git-scm.com/downloads)
+
+Seguimos los pasos de instalación dejando las opciones dadas por default. 
+
+**Para instalar GIT en sistemas macOs se debe seguir los siguientes pasos:**
+
+  * Elegir la opción descargar para macOs
+  * Hacer clic en `homebrew`
+<div style="text-align: center"> 
+![](img/homebrew.png){height=60px}
+</div>
+
+  * En la página que se abre, seleccionar el idioma de preferencia
+  * Copiar el enlace que aparece debajo de las palabras "Install Hombrew"
+
+<div style="text-align: center"> 
+![](img/install homebrew.png){height=200px}
+</div>
+
+  * Abrir RStudio y ubicarse en la parte "Terminal", una vez allí, pegar (haciendo clic derecho) el link anteriormente copiado. En el caso en que se pida contraseña, escribir la constraseña de su computador a pesar de que parezca que no se está tipeando, a continuación presionar la tecla enter.
+
+<div style="text-align: center"> 
+![](img/terminal.png){height=200px}  
+</div>
+
+  * Pegar los siguiente enunciados en "Terminal" y presionar enter después de cada uno
+    * brew install wget
+    * git \--version
+  
+  
+Una vez instalado es necesaria una breve configuración de usuario. Para ello es necesario seguir la guia de GIT que se encuentra a continuación para disposición del estudiante.
+
+# Creación de una cuenta en **github.com**
+
+En primer lugar accedemos a la página de [GitHub](https://github.com/) y seguimos los siguientes pasos:
+
+1. Creamos un usuario haciendo clic en "Sign up" y completando los campos:
+
+<div style="text-align: center"> 
+![](img/crear_cuenta_git.png){height=250px}
+</div>
+
+2. Resolvemos el captcha y damos click a "Join a free plan"
+
+<div style="text-align: center"> 
+![](img/verificar_git.png){height=250px}
+</div>
+
+3. Nos llegará un correo en el cual debemos dar click en "Verify email adress" con la finalidad de autentificar nuestra dirección de correo electrónico:
+
+<div style="text-align: center"> 
+![](img/verificar_mail.png){height=250px}
+</div>
+
+4. De esta manera, ya está creada una cuenta en GitHub. Para acceder al lugar en donde se encuentra el material del curso (repositorio) se debe hacer clic en el siguiente enlace: 
+
+[Repositorio del curso](https://github.com/AlexB4891/curso_ambiente_R_ciencias)
+
+<div style="text-align: center"> 
+![](img/repositorio.png){height=250px}
+</div>
+
+> Para no perderte novedades sobre este repositorio es necesario dar click en "Star", este se encuentra ubicado en la esquina superior derecha
+
+
+# Obtención de los recursos del repositorio 
+
+Ya estamos casi listos para empezar el curso, solo nos queda obtener los recursos necesarios para la obtención de los materiales que día a día iremos desarrollando.
+
+1. Primero, se debe declarar el usuario GIT, para ello, una vez instalado GIT, se abre automáticamente el programa `GIT Bash` en donde escribimos las siguientes sentencias:
+
+```{cmd, eval = FALSE}
+
+     git config --global user.mail #correo usado en GIT
+
+     git config --global user.name #escribir su nombre
+
+```
+  
+   Nota: 
+   
+   a. `Git Bash` es el programa default que se descarga cuando instalamos el Git.
+   b. En el caso en el que se esté trabajando en un sistema macOs ubicarse en `Terminal` y escribir las sentencias antes mencionadas.
+   
+  ![](img/global_variables.png){height=250px}
+  
+2. A continación, declaramos el lugar en donde queremos guardar la carpeta de contenidos (la cual se conoce como directorio). En mi caso quiero guardar en mis "Documentos", por ende escribiré:
+    * cd Documents/
+
+ ![](img/change_dir.png){height=110px}
+
+3. Para finalizar, hacemos una copia del repositorio donde de aqui en adelante se irán subiendo los materiales del curso. Para ello, es necesario copiar la siguiente sentencia y hacer clic en enter:
+
+```{CMD ,eval=FALSE}
+
+git clone https://github.com/AlexB4891/curso_ambiente_R_ciencias.git
+
+```
+
+![](img/clone_git.png){height=155px}
+
+4. Para verificar que se realizó correctamente el procedimiento, revisamos en la carpeta "mis documentos" que se haya creado una carpeta con el nombre `curso_ambiente_R_ciencias`. En esta encontrarás los documentos del curso junto a otras guias, las cuales te serán utiles en el transcurso del curso.
+
+Con esto concluyen nuestros primeros pasos para el curso. Por 5 semanas estos serán nuestros aliados en el aprendizaje y en un futuro en el trabajo. 
+
+<div style="text-align: center"> 
+**¡ Gracias por inscribirse y nuevamente bienvenidos !**
+</div>
